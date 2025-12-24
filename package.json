@@ -1,0 +1,48 @@
+{
+  "name": "accessibility-toolkit",
+  "version": "1.0.0",
+  "description": "Accessibility Toolkit is a collection of tools to help you make your website more accessible.",
+  "author": {
+    "name": "handyplugins",
+    "email": "support@handyplugins.co",
+    "url": "https://handyplugins.co",
+    "role": "developer"
+  },
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "start": "composer install && npm install --production=false && npm run build",
+    "watch": "10up-toolkit watch",
+    "build": "10up-toolkit build",
+    "format-js": "10up-toolkit format-js",
+    "lint-js": "10up-toolkit lint-js",
+    "lint-style": "10up-toolkit lint-style",
+    "test": "10up-toolkit test-unit-jest",
+    "make-pot": "wp i18n make-pot . languages/accessibility-toolkit.pot --domain='accessibility-toolkit'",
+    "make-json": "wp i18n make-json languages --no-purge",
+    "build-release": "npm install --production=false && composer install --no-dev -o && npm run build && npm run make-pot",
+    "lint-release": "npm install && composer install && npm run lint"
+  },
+  "devDependencies": {
+    "@wordpress/element": "^4.0.0",
+    "@wordpress/scripts": "^31.1.0",
+    "@wordpress/server-side-render": "^4.25",
+    "@wpmudev/shared-ui": "2.12.25",
+    "10up-toolkit": "^6.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "accessibility": "^6.1.0",
+    "normalize.css": "^8.0.1"
+  },
+  "10up-toolkit": {
+    "entry": {
+      "admin": "./assets/js/admin/admin.js",
+      "frontend": "./assets/js/frontend/frontend.js",
+      "admin-style": "./assets/css/admin/admin-style.css",
+      "material-icons": "./assets/css/frontend/material-icons.css"
+    },
+    "wpDependencyExternals": false
+  }
+}

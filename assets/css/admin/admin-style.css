@@ -1,0 +1,10 @@
+/**
+ * Accessibility Toolkit - Admin Styles
+ */
+@import url("@wpmudev/shared-ui/dist/css/shared-ui.css");
+
+.wp-picker-holder,
+.iris-picker-inner,
+.iris-picker{
+	box-sizing:unset!important;
+}
