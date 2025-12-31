@@ -22,12 +22,12 @@ Accessibility Toolkit integrates seamlessly into your WordPress website by addin
 
 = Features =
 
-Here are the pro features that come with Accessibility Toolkit:
+Here are the features that come with Accessibility Toolkit:
 
 - __Text Size Manipulation:__ Easily increase or decrease the size of the text across your website.
 - __Text Spacing Adjustment:__ Adjust the spacing between characters to improve readability.
 - __Line Height Adjustment:__ Enhance the readability of your content by increasing or decreasing the line height.
-- __Gray Hues:__  Convert your website into grayscale, making it easier on the eyes for some users and aiding those with color vision deficiencies.
+- __Gray Hues:__ Convert your website into grayscale, making it easier on the eyes for some users and aiding those with color vision deficiencies.
 - __Underline Links:__ Automatically underline links to make them stand out more distinctly from regular text, facilitating easier navigation for users with visual impairments.
 - __Reading Guide:__ Add a horizontal reading line that follows the mouse or touch position, enhancing focus and reading comprehension for users.
 - __Big Cursor:__ Replace the default mouse cursor with a larger version, making it easier to see and navigate the website for users with visual impairments.
@@ -70,7 +70,7 @@ The Accessibility Toolkit is optimized for minimal impact on website performance
 
 = How does the Text to Speech functionality work, and does it support multiple languages? =
 
-The Text to Speech function of the Accessibility Toolkit transforms the written content on your website into audible speech, making it more accessible to individuals with visual impairments and those who favor auditory learning. This feature leverages the text to speech capabilities of the user's browser.
+The Text-to-Speech function of the Accessibility Toolkit transforms the written content on your website into audible speech, making it more accessible to individuals with visual impairments and those who favor auditory learning. This feature leverages the text to speech capabilities of the user's browser.
 
 = Are users' accessibility settings saved for future visits? =
 
