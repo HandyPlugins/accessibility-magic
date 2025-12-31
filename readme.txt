@@ -22,7 +22,7 @@ Accessibility Toolkit integrates seamlessly into your WordPress website by addin
 
 = Features =
 
-Here are the premium features that come with Accessibility Toolkit:
+Here are the pro features that come with Accessibility Toolkit:
 
 - __Text Size Manipulation:__ Easily increase or decrease the size of the text across your website.
 - __Text Spacing Adjustment:__ Adjust the spacing between characters to improve readability.
