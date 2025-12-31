@@ -7,6 +7,10 @@
 
 namespace AccessibilityToolkit\Utils;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 use AccessibilityToolkit\Encryption;
 use const AccessibilityToolkit\Constants\DEFAULT_SETTINGS;
 use const AccessibilityToolkit\Constants\LICENSE_ENDPOINT;

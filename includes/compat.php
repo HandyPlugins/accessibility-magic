@@ -7,6 +7,10 @@
 
 namespace AccessibilityToolkit\Compat;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 /**
  * Default setup routine
  *

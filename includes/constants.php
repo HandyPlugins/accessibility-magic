@@ -7,6 +7,10 @@
 
 namespace AccessibilityToolkit\Constants;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 const SETTING_OPTION = 'accessibility_toolkit_settings';
 
 const DEFAULT_SETTINGS

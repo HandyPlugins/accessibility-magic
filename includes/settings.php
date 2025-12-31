@@ -7,6 +7,10 @@
 
 namespace AccessibilityToolkit\Settings;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 use AccessibilityToolkit\Encryption;
 use function AccessibilityToolkit\Utils\delete_all_tokens;
 use function AccessibilityToolkit\Utils\get_allowed_intervals;

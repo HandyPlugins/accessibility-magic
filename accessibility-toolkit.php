@@ -18,6 +18,10 @@
 
 namespace AccessibilityToolkit;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 // Useful global constants.
 define( 'ACCESSIBILITY_TOOLKIT_VERSION', '1.0' );
 define( 'ACCESSIBILITY_TOOLKIT_DB_VERSION', '1.0' );

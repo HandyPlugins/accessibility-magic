@@ -7,6 +7,10 @@
 
 namespace AccessibilityToolkit\Core;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 use function AccessibilityToolkit\Utils\is_accessibility_toolkit_settings_screen;
 use \WP_Error as WP_Error;
 use function AccessibilityToolkit\Utils\is_excluded_page;
