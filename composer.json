@@ -1,6 +1,6 @@
 {
-  "name": "handyplugins/accessibility-toolkit",
-  "description": "Accessibility Toolkit is a collection of tools to help you make your website more accessible.",
+  "name": "handyplugins/accessibility-magic",
+  "description": "Accessibility Magic is a collection of tools to help you make your website more accessible.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AccessibilityToolkit\\": "includes/"
+      "AccessibilityMagic\\": "includes/"
     }
   },
   "require-dev": {
