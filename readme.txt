@@ -43,6 +43,9 @@ Here are the features that come with Accessibility Magic:
 = Documentation =
 Documentation is available at [https://handyplugins.co/wp-accessibility-toolkit/docs/](https://handyplugins.co/wp-accessibility-toolkit/docs/)
 
+= Contributing & Bug Reports =
+Bug reports and pull requests are welcome on GitHub, where development and maintenance continue: [https://github.com/handyplugins/accessibility-magic](https://github.com/handyplugins/accessibility-magic)
+
 == Installation ==
 
 = Manual Installation =
