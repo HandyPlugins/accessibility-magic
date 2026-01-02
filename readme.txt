@@ -1,4 +1,4 @@
-=== Accessibility Toolkit ===
+=== Accessibility Magic ===
 Contributors:      handyplugins, m_uysl
 Tags:              accessibility, a11y, wcag, w3c, ada
 Requires at least: 5.0
@@ -9,73 +9,68 @@ License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://handyplugins.co/donate/
 
-Accessibility Toolkit is a collection of tools to help you make your website more accessible.
+Accessibility Magic provides an accessibility widget that helps visitors personalize their browsing experience.
 
 == Description ==
-Accessibility Toolkit adds an unobtrusive, user-friendly accessibility widget to the frontend of your WordPress site. Visitors can personalize display settings to better match their needs, improving readability and overall usability.
+Accessibility Magic adds an unobtrusive, user-friendly accessibility widget to the frontend of your WordPress site. Visitors can personalize display settings to better match their needs, improving readability and overall usability.
 
 **Important:** This plugin helps visitors adjust the *presentation* of your site in their browser. It does not automatically make a site fully WCAG/ADA compliant. Accessible themes, semantic content, and regular testing are still required.
 
 = How does it work? ♿ =
 
-Accessibility Toolkit integrates seamlessly into your WordPress website by adding an unobtrusive, user-friendly widget to the frontend. This widget serves as the gateway for visitors to personalize the accessibility features according to their needs, ensuring a more inclusive browsing experience.
+Accessibility Magic integrates seamlessly into your WordPress website by adding an unobtrusive accessibility widget to the frontend. Visitors can adjust accessibility-related settings based on their individual preferences.
 
 = Features =
 
-Here are the features that come with Accessibility Toolkit:
+Here are the features that come with Accessibility Magic:
 
 - __Text Size Manipulation:__ Easily increase or decrease the size of the text across your website.
 - __Text Spacing Adjustment:__ Adjust the spacing between characters to improve readability.
-- __Line Height Adjustment:__ Enhance the readability of your content by increasing or decreasing the line height.
-- __Gray Hues:__ Convert your website into grayscale, making it easier on the eyes for some users and aiding those with color vision deficiencies.
-- __Underline Links:__ Automatically underline links to make them stand out more distinctly from regular text, facilitating easier navigation for users with visual impairments.
-- __Reading Guide:__ Add a horizontal reading line that follows the mouse or touch position, enhancing focus and reading comprehension for users.
-- __Big Cursor:__ Replace the default mouse cursor with a larger version, making it easier to see and navigate the website for users with visual impairments.
+- __Line Height Adjustment:__ Increase or decrease line height for improved content readability.
+- __Gray Hues:__ Convert your website into grayscale, which may help users with color vision deficiencies.
+- __Underline Links:__ Automatically underline links to make them more distinguishable from regular text.
+- __Reading Guide:__ Add a horizontal reading guide that follows the cursor or touch position to improve focus.
+- __Big Cursor:__ Replace the default cursor with a larger one for easier visibility and navigation.
 
 = PRO Features =
 
-- __Color Inversion:__ With a simple toggle, invert the colors of your website's background and text. This feature is particularly useful for users with certain visual impairments, as it can reduce eye strain and improve contrast.
-- __Text to Speech:__ Incorporate a text-to-speech feature that reads out the content of the website, making it more accessible to users with visual impairments or reading difficulties.
-- __Icon Customization:__ Customize the appearance of the accessibility widget to better match your website's design and branding.
+- __Color Inversion:__ Invert background and text colors to improve contrast and reduce eye strain for some users.
+- __Text to Speech:__ Read website content aloud to support users with visual impairments or reading difficulties.
+- __Icon Customization:__ Customize the accessibility widget icon to better match your site’s design.
 
-**[Learn more about Accessibility Toolkit Pro](https://handyplugins.co/wp-accessibility-toolkit/)**
+**[Learn more about the Pro features](https://handyplugins.co/wp-accessibility-toolkit/)**
 
 = Documentation =
-Our documentation can be found on [https://handyplugins.co/wp-accessibility-toolkit/docs/](https://handyplugins.co/wp-accessibility-toolkit/docs/)
+Documentation is available at [https://handyplugins.co/wp-accessibility-toolkit/docs/](https://handyplugins.co/wp-accessibility-toolkit/docs/)
 
 == Installation ==
 
 = Manual Installation =
 
-1. Upload the entire `/accessibility-toolkit` directory to the `/wp-content/plugins/` directory.
-2. Activate Accessibility Toolkit through the 'Plugins' menu in WordPress.
+1. Upload the entire `/accessibility-magic` directory to the `/wp-content/plugins/` directory.
+2. Activate Accessibility Magic through the 'Plugins' menu in WordPress.
 
 == Frequently Asked Questions ==
 
-= Does using the Accessibility Toolkit ensure my website is fully compliant with accessibility standards? =
+= Does using Accessibility Magic ensure full accessibility compliance? =
 
-While the Accessibility Toolkit significantly enhances your website's accessibility by enabling users to customize their browsing experience, it does not guarantee full compliance with all accessibility standards. To achieve the best results, it's important to use accessible themes and plugins and adhere to web accessibility best practices throughout your site.
+No. While the plugin enhances accessibility by allowing visitors to customize their browsing experience, it does not guarantee full compliance with accessibility standards. Accessible themes, proper content structure, and regular testing are still required.
 
-=  Can the Accessibility Toolkit be used with any WordPress theme? =
+= Can Accessibility Magic be used with any WordPress theme? =
 
-Yes, the Accessibility Toolkit is designed to be compatible with most WordPress themes. However, the effectiveness of the toolkit can vary depending on the theme's built-in accessibility features. For optimal performance, we recommend choosing themes that are developed with accessibility in mind.
+Yes. The plugin is compatible with most WordPress themes. However, results may vary depending on the theme’s own accessibility practices.
 
-= Is the Accessibility Toolkit user-friendly for website owners without technical expertise? =
+= Is Accessibility Magic easy to use for non-technical site owners? =
 
-Absolutely! The Accessibility Toolkit is designed for ease of use. Once installed, it automatically adds an accessibility widget to your site without requiring complex setup. Website owners can customize the widget's settings directly from the WordPress dashboard with ease.
+Yes. Once activated, the plugin automatically adds the accessibility widget to your site. Configuration options are available in the WordPress dashboard and do not require technical knowledge.
 
-= Will the Accessibility Toolkit impact my website's performance or loading speed? =
+= Will Accessibility Magic impact site performance? =
 
-The Accessibility Toolkit is optimized for minimal impact on website performance.
+The plugin is designed to have minimal impact on performance.
 
-= How does the Text to Speech functionality work, and does it support multiple languages? =
+= Are users' accessibility settings saved? =
 
-The Text-to-Speech function of the Accessibility Toolkit transforms the written content on your website into audible speech, making it more accessible to individuals with visual impairments and those who favor auditory learning. This feature leverages the text to speech capabilities of the user's browser.
-
-= Are users' accessibility settings saved for future visits? =
-
-Yes, the Accessibility Toolkit remember users' accessibility settings. When a user adjusts their preferences through the widget, these settings are saved for their future visits (on their browser), providing a consistent and personalized experience.
-
+Yes. Accessibility Magic stores user preferences in the visitor’s browser so their settings persist across future visits.
 
 == Screenshots ==
 
@@ -88,5 +83,3 @@ Yes, the Accessibility Toolkit remember users' accessibility settings. When a us
 * Initial release
 
 == Upgrade Notice ==
-
-

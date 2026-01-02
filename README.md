@@ -1,8 +1,8 @@
-# [Accessibility Toolkit](https://handyplugins.co/wp-accessibility-toolkit/) #
+# [Accessibility Magic](https://handyplugins.co/wp-accessibility-toolkit/) #
 
 ### Welcome to our GitHub Repository
 
-Accessibility Toolkit is a collection of tools to help you make your website more accessible.
+Accessibility Magic is a collection of tools to help you make your website more accessible.
 
 More information can be found at [handyplugins.co](https://handyplugins.co/wp-accessibility-toolkit/).
 

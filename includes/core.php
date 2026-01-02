@@ -2,19 +2,19 @@
 /**
  * Core plugin functionality.
  *
- * @package AccessibilityToolkit
+ * @package AccessibilityMagic
  */
 
-namespace AccessibilityToolkit\Core;
+namespace AccessibilityMagic\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-use function AccessibilityToolkit\Utils\is_accessibility_toolkit_settings_screen;
+use function AccessibilityMagic\Utils\is_accessibility_magic_settings_screen;
 use \WP_Error as WP_Error;
-use function AccessibilityToolkit\Utils\is_excluded_page;
-use function AccessibilityToolkit\Utils\process_icon_position;
+use function AccessibilityMagic\Utils\is_excluded_page;
+use function AccessibilityMagic\Utils\process_icon_position;
 
 /**
  * Default setup routine
@@ -59,10 +59,10 @@ function get_enqueue_contexts() {
 function script_url( $script, $context ) {
 
 	if ( ! in_array( $context, get_enqueue_contexts(), true ) ) {
-		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in AccessibilityToolkit script loader.' );
+		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in AccessibilityMagic script loader.' );
 	}
 
-	return ACCESSIBILITY_TOOLKIT_URL . "dist/js/{$script}.js";
+	return ACCESSIBILITY_MAGIC_URL . "dist/js/{$script}.js";
 
 }
 
@@ -77,10 +77,10 @@ function script_url( $script, $context ) {
 function style_url( $stylesheet, $context ) {
 
 	if ( ! in_array( $context, get_enqueue_contexts(), true ) ) {
-		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in AccessibilityToolkit stylesheet loader.' );
+		return new WP_Error( 'invalid_enqueue_context', 'Invalid $context specified in AccessibilityMagic stylesheet loader.' );
 	}
 
-	return ACCESSIBILITY_TOOLKIT_URL . "dist/css/{$stylesheet}.css";
+	return ACCESSIBILITY_MAGIC_URL . "dist/css/{$stylesheet}.css";
 
 }
 
@@ -91,15 +91,15 @@ function style_url( $stylesheet, $context ) {
  * @return void
  */
 function admin_scripts() {
-	if ( ! is_accessibility_toolkit_settings_screen() ) {
+	if ( ! is_accessibility_magic_settings_screen() ) {
 		return;
 	}
 
 	wp_enqueue_script(
-		'accessibility_toolkit_admin',
+		'accessibility_magic_admin',
 		script_url( 'admin', 'admin' ),
 		[ 'wp-color-picker' ],
-		ACCESSIBILITY_TOOLKIT_VERSION,
+		ACCESSIBILITY_MAGIC_VERSION,
 		true
 	);
 }
@@ -111,17 +111,17 @@ function admin_scripts() {
  */
 function admin_styles() {
 
-	if ( ! is_accessibility_toolkit_settings_screen() ) {
+	if ( ! is_accessibility_magic_settings_screen() ) {
 		return;
 	}
 
 	wp_enqueue_style(
-		'accessibility_toolkit_admin',
+		'accessibility_magic_admin',
 		style_url( 'admin-style', 'admin' ),
 		[
 			'wp-color-picker',
 		],
-		ACCESSIBILITY_TOOLKIT_VERSION
+		ACCESSIBILITY_MAGIC_VERSION
 	);
 
 }
@@ -132,7 +132,7 @@ function admin_styles() {
  * @return void
  */
 function enqueue_scripts() {
-	$settings = \AccessibilityToolkit\Utils\get_settings();
+	$settings = \AccessibilityMagic\Utils\get_settings();
 
 	if ( is_excluded_page() ) {
 		return;
@@ -158,7 +158,7 @@ function enqueue_scripts() {
 		'accessibility_toolkit_frontend',
 		script_url( 'frontend', 'frontend' ),
 		[],
-		ACCESSIBILITY_TOOLKIT_VERSION,
+		ACCESSIBILITY_MAGIC_VERSION,
 		[
 			'strategy'  => 'defer',
 			'in_footer' => true,
@@ -167,23 +167,23 @@ function enqueue_scripts() {
 
 	$js_options = [
 		'labels'   => [
-			'resetTitle'          => esc_html__( 'Reset', 'accessibility-toolkit' ),
-			'closeTitle'          => esc_html__( 'Close', 'accessibility-toolkit' ),
-			'menuTitle'           => esc_html__( 'Accessibility Options', 'accessibility-toolkit' ),
-			'increaseText'        => esc_html__( 'Increase Text Size', 'accessibility-toolkit' ),
-			'decreaseText'        => esc_html__( 'Decrease Text Size', 'accessibility-toolkit' ),
-			'increaseTextSpacing' => esc_html__( 'Increase Text Spacing', 'accessibility-toolkit' ),
-			'decreaseTextSpacing' => esc_html__( 'Decrease Text Spacing', 'accessibility-toolkit' ),
-			'increaseLineHeight'  => esc_html__( 'Increase Line Height', 'accessibility-toolkit' ),
-			'decreaseLineHeight'  => esc_html__( 'Decrease Line Height', 'accessibility-toolkit' ),
-			'invertColors'        => esc_html__( 'Invert Colors', 'accessibility-toolkit' ),
-			'grayHues'            => esc_html__( 'Gray Hues', 'accessibility-toolkit' ),
-			'underlineLinks'      => esc_html__( 'Underline Links', 'accessibility-toolkit' ),
-			'bigCursor'           => esc_html__( 'Big Cursor', 'accessibility-toolkit' ),
-			'readingGuide'        => esc_html__( 'Reading Guide', 'accessibility-toolkit' ),
-			'textToSpeech'        => esc_html__( 'Text to Speech', 'accessibility-toolkit' ),
-			'speechToText'        => esc_html__( 'Speech to Text', 'accessibility-toolkit' ),
-			'disableAnimations'   => esc_html__( 'Disable Animations', 'accessibility-toolkit' ),
+			'resetTitle'          => esc_html__( 'Reset', 'accessibility-magic' ),
+			'closeTitle'          => esc_html__( 'Close', 'accessibility-magic' ),
+			'menuTitle'           => esc_html__( 'Accessibility Options', 'accessibility-magic' ),
+			'increaseText'        => esc_html__( 'Increase Text Size', 'accessibility-magic' ),
+			'decreaseText'        => esc_html__( 'Decrease Text Size', 'accessibility-magic' ),
+			'increaseTextSpacing' => esc_html__( 'Increase Text Spacing', 'accessibility-magic' ),
+			'decreaseTextSpacing' => esc_html__( 'Decrease Text Spacing', 'accessibility-magic' ),
+			'increaseLineHeight'  => esc_html__( 'Increase Line Height', 'accessibility-magic' ),
+			'decreaseLineHeight'  => esc_html__( 'Decrease Line Height', 'accessibility-magic' ),
+			'invertColors'        => esc_html__( 'Invert Colors', 'accessibility-magic' ),
+			'grayHues'            => esc_html__( 'Gray Hues', 'accessibility-magic' ),
+			'underlineLinks'      => esc_html__( 'Underline Links', 'accessibility-magic' ),
+			'bigCursor'           => esc_html__( 'Big Cursor', 'accessibility-magic' ),
+			'readingGuide'        => esc_html__( 'Reading Guide', 'accessibility-magic' ),
+			'textToSpeech'        => esc_html__( 'Text to Speech', 'accessibility-magic' ),
+			'speechToText'        => esc_html__( 'Speech to Text', 'accessibility-magic' ),
+			'disableAnimations'   => esc_html__( 'Disable Animations', 'accessibility-magic' ),
 		],
 		'modules'  => [
 			'increaseText'        => $settings['enable_text_size'],
@@ -209,7 +209,7 @@ function enqueue_scripts() {
 				$settings['icon']['offset_y'],
 				$settings['icon']['offset_unit']
 			),
-			'fontFaceSrc'     => [ ACCESSIBILITY_TOOLKIT_URL . 'dist/css/material-icons.css' ],
+			'fontFaceSrc'     => [ ACCESSIBILITY_MAGIC_URL . 'dist/css/material-icons.css' ],
 			'dimensions'      => [
 				'width'  => [
 					'size'  => $settings['icon']['dimension_w'],
@@ -225,26 +225,26 @@ function enqueue_scripts() {
 		],
 		'language' => [
 			'textToSpeechMessages' => [
-				'Screen Reader enabled. Reading Pace - Normal' => esc_html__( 'Screen Reader enabled. Reading Pace - Normal', 'accessibility-toolkit' ),
-				'Reading Pace - Fast'      => esc_html__( 'Reading Pace - Fast', 'accessibility-toolkit' ),
-				'Reading Pace - Slow'      => esc_html__( 'Reading Pace - Slow', 'accessibility-toolkit' ),
-				'Screen Reader - Disabled' => esc_html__( 'Screen Reader - Disabled', 'accessibility-toolkit' ),
-				'Colors Set To Normal'     => esc_html__( 'Colors Set To Normal', 'accessibility-toolkit' ),
-				'Colors Inverted'          => esc_html__( 'Colors Inverted', 'accessibility-toolkit' ),
-				'Gray Hues Disabled'       => esc_html__( 'Gray Hues Disabled', 'accessibility-toolkit' ),
-				'Gray Hues Enabled'        => esc_html__( 'Gray Hues Enabled', 'accessibility-toolkit' ),
-				'Links UnderLined'         => esc_html__( 'Links UnderLined', 'accessibility-toolkit' ),
-				'Links UnderLine Removed'  => esc_html__( 'Links UnderLine Removed', 'accessibility-toolkit' ),
-				'Big Cursor Enabled'       => esc_html__( 'Big Cursor Enabled', 'accessibility-toolkit' ),
-				'Big Cursor Disabled'      => esc_html__( 'Big Cursor Disabled', 'accessibility-toolkit' ),
-				'Reading Guide Enabled'    => esc_html__( 'Reading Guide Enabled', 'accessibility-toolkit' ),
-				'Reading Guide Disabled'   => esc_html__( 'Reading Guide Disabled', 'accessibility-toolkit' ),
-				'Text Size Increased'      => esc_html__( 'Text Size Increased', 'accessibility-toolkit' ),
-				'Text Size Decreased'      => esc_html__( 'Text Size Decreased', 'accessibility-toolkit' ),
-				'Line Height Increased'    => esc_html__( 'Line Height Increased', 'accessibility-toolkit' ),
-				'Line Height Decreased'    => esc_html__( 'Line Height Decreased', 'accessibility-toolkit' ),
-				'Text Spacing Increased'   => esc_html__( 'Text Spacing Increased', 'accessibility-toolkit' ),
-				'Text Spacing Decreased'   => esc_html__( 'Text Spacing Decreased', 'accessibility-toolkit' ),
+				'Screen Reader enabled. Reading Pace - Normal' => esc_html__( 'Screen Reader enabled. Reading Pace - Normal', 'accessibility-magic' ),
+				'Reading Pace - Fast'      => esc_html__( 'Reading Pace - Fast', 'accessibility-magic' ),
+				'Reading Pace - Slow'      => esc_html__( 'Reading Pace - Slow', 'accessibility-magic' ),
+				'Screen Reader - Disabled' => esc_html__( 'Screen Reader - Disabled', 'accessibility-magic' ),
+				'Colors Set To Normal'     => esc_html__( 'Colors Set To Normal', 'accessibility-magic' ),
+				'Colors Inverted'          => esc_html__( 'Colors Inverted', 'accessibility-magic' ),
+				'Gray Hues Disabled'       => esc_html__( 'Gray Hues Disabled', 'accessibility-magic' ),
+				'Gray Hues Enabled'        => esc_html__( 'Gray Hues Enabled', 'accessibility-magic' ),
+				'Links UnderLined'         => esc_html__( 'Links UnderLined', 'accessibility-magic' ),
+				'Links UnderLine Removed'  => esc_html__( 'Links UnderLine Removed', 'accessibility-magic' ),
+				'Big Cursor Enabled'       => esc_html__( 'Big Cursor Enabled', 'accessibility-magic' ),
+				'Big Cursor Disabled'      => esc_html__( 'Big Cursor Disabled', 'accessibility-magic' ),
+				'Reading Guide Enabled'    => esc_html__( 'Reading Guide Enabled', 'accessibility-magic' ),
+				'Reading Guide Disabled'   => esc_html__( 'Reading Guide Disabled', 'accessibility-magic' ),
+				'Text Size Increased'      => esc_html__( 'Text Size Increased', 'accessibility-magic' ),
+				'Text Size Decreased'      => esc_html__( 'Text Size Decreased', 'accessibility-magic' ),
+				'Line Height Increased'    => esc_html__( 'Line Height Increased', 'accessibility-magic' ),
+				'Line Height Decreased'    => esc_html__( 'Line Height Decreased', 'accessibility-magic' ),
+				'Text Spacing Increased'   => esc_html__( 'Text Spacing Increased', 'accessibility-magic' ),
+				'Text Spacing Decreased'   => esc_html__( 'Text Spacing Decreased', 'accessibility-magic' ),
 			],
 		],
 		'hotkeys'  => [
@@ -257,14 +257,14 @@ function enqueue_scripts() {
 			$js_options['iframeModals'] = [
 				[
 					'iframeUrl'  => esc_url_raw( $settings['accessibility_statement'] ),
-					'buttonText' => esc_html__( 'Accessibility Statement', 'accessibility-toolkit' ),
+					'buttonText' => esc_html__( 'Accessibility Statement', 'accessibility-magic' ),
 					'icon'       => 'policy',
 				],
 			];
 		} else {
 			$js_options['statement'] = [
 				'url'  => esc_url_raw( $settings['accessibility_statement'] ),
-				'text' => esc_html__( 'Accessibility Statement', 'accessibility-toolkit' ),
+				'text' => esc_html__( 'Accessibility Statement', 'accessibility-magic' ),
 			];
 		}
 	}

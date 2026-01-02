@@ -1,7 +1,7 @@
 {
-  "name": "accessibility-toolkit",
+  "name": "accessibility-magic",
   "version": "1.0.0",
-  "description": "Accessibility Toolkit is a collection of tools to help you make your website more accessible.",
+  "description": "Accessibility Magic is a collection of tools to help you make your website more accessible.",
   "author": {
     "name": "handyplugins",
     "email": "support@handyplugins.co",
@@ -17,7 +17,7 @@
     "lint-js": "10up-toolkit lint-js",
     "lint-style": "10up-toolkit lint-style",
     "test": "10up-toolkit test-unit-jest",
-    "make-pot": "wp i18n make-pot . languages/accessibility-toolkit.pot --domain='accessibility-toolkit'",
+    "make-pot": "wp i18n make-pot . languages/accessibility-magic.pot --domain='accessibility-magic'",
     "make-json": "wp i18n make-json languages --no-purge",
     "build-release": "npm install --production=false && composer install --no-dev -o && npm run build && npm run make-pot",
     "lint-release": "npm install && composer install && npm run lint"

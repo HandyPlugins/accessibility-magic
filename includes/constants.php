@@ -5,13 +5,13 @@
  * @package MagicLogin
  */
 
-namespace AccessibilityToolkit\Constants;
+namespace AccessibilityMagic\Constants;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-const SETTING_OPTION = 'accessibility_toolkit_settings';
+const SETTING_OPTION = 'accessibility_magic_settings';
 
 const DEFAULT_SETTINGS
 = [

@@ -2,10 +2,10 @@
 /**
  * Plugin compatibility with 3rd party plugins/themes
  *
- * @package AccessibilityToolkit
+ * @package AccessibilityMagic
  */
 
-namespace AccessibilityToolkit\Compat;
+namespace AccessibilityMagic\Compat;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

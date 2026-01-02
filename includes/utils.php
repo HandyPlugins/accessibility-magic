@@ -2,21 +2,18 @@
 /**
  * Common utilities and functions
  *
- * @package AccessibilityToolkit
+ * @package AccessibilityMagic
  */
 
-namespace AccessibilityToolkit\Utils;
+namespace AccessibilityMagic\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-use AccessibilityToolkit\Encryption;
-use const AccessibilityToolkit\Constants\DEFAULT_SETTINGS;
-use const AccessibilityToolkit\Constants\LICENSE_ENDPOINT;
-use const AccessibilityToolkit\Constants\LICENSE_INFO_TRANSIENT;
-use const AccessibilityToolkit\Constants\LICENSE_KEY_OPTION;
-use const AccessibilityToolkit\Constants\SETTING_OPTION;
+use AccessibilityMagic\Encryption;
+use const AccessibilityMagic\Constants\DEFAULT_SETTINGS;
+use const AccessibilityMagic\Constants\SETTING_OPTION;
 
 /**
  * Get settings with defaults
@@ -27,7 +24,7 @@ use const AccessibilityToolkit\Constants\SETTING_OPTION;
 function get_settings() {
 	$defaults = DEFAULT_SETTINGS;
 
-	if ( ACCESSIBILITY_TOOLKIT_IS_NETWORK ) {
+	if ( ACCESSIBILITY_MAGIC_IS_NETWORK ) {
 		$settings = get_site_option( SETTING_OPTION, [] );
 	} else {
 		$settings = get_option( SETTING_OPTION, [] );
@@ -87,19 +84,19 @@ function get_doc_url( $path = null, $fragment = '' ) {
 }
 
 /**
- * Check weather current screen is accessibility toolkit settings page or not
+ * Check weather current screen is accessibility magic settings page or not
  *
  * @return bool
  * @since 1.0
  */
-function is_accessibility_toolkit_settings_screen() {
+function is_accessibility_magic_settings_screen() {
 	$current_screen = get_current_screen();
 
 	if ( ! is_a( $current_screen, '\WP_Screen' ) ) {
 		return false;
 	}
 
-	if ( false !== strpos( $current_screen->base, 'accessibility-toolkit' ) ) {
+	if ( false !== strpos( $current_screen->base, 'accessibility-magic' ) ) {
 		return true;
 	}
 
