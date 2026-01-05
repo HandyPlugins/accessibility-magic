@@ -82,7 +82,7 @@ Yes. Accessibility Magic stores user preferences in the visitor’s browser so t
 
 == Changelog ==
 
-= 1.0 (December 24, 2025) =
+= 1.0 (January 05, 2026) =
 * Initial release
 
 == Upgrade Notice ==
