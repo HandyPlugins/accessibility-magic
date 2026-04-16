@@ -46,6 +46,18 @@ Documentation is available at [https://handyplugins.co/wp-accessibility-toolkit/
 = Contributing & Bug Reports =
 Bug reports and pull requests are welcome on GitHub, where development and maintenance continue: [https://github.com/handyplugins/accessibility-magic](https://github.com/handyplugins/accessibility-magic)
 
+== More from HandyPlugins ==
+
+If Accessibility Magic is helpful on your site, you may also want to explore our other WordPress plugins:
+
+* [Powered Cache](https://poweredcache.com/) – Caching and optimization for WordPress to help improve PageSpeed and Core Web Vitals.
+* [Magic Login Pro](https://handyplugins.co/magic-login-pro/) – Easy, secure, and passwordless authentication for WordPress.
+* [SessionQuota Pro](https://handyplugins.co/sessionquota-pro/) – Limit concurrent sessions in WordPress.
+* [Stream Integration Pro](https://handyplugins.co/stream-integration-pro/) – Upload, sync, restore, and manage WordPress videos with Cloudflare Stream.
+* [Easy Text-to-Speech](https://handyplugins.co/easy-text-to-speech/) – Convert written content into high-quality synthesized speech for WordPress.
+* [Handywriter](https://handyplugins.co/handywriter/) – AI-powered writing assistant for WordPress.
+* [PaddlePress PRO](https://handyplugins.co/paddlepress-pro/) – Paddle plugin for WordPress.
+
 == Installation ==
 
 = Manual Installation =
