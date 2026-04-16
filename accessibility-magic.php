@@ -3,7 +3,7 @@
  * Plugin Name:       Accessibility Magic
  * Plugin URI:        https://handyplugins.co/wp-accessibility-toolkit/
  * Description:       Accessibility Magic is a collection of tools to make your WordPress website more accessible.
- * Version:           1.0
+ * Version:           1.0.1
  * Requires at least: 5.0
  * Requires PHP:      7.2
  * Author:            HandyPlugins
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Useful global constants.
-define( 'ACCESSIBILITY_MAGIC_VERSION', '1.0' );
+define( 'ACCESSIBILITY_MAGIC_VERSION', '1.0.1' );
 define( 'ACCESSIBILITY_MAGIC_DB_VERSION', '1.0' );
 define( 'ACCESSIBILITY_MAGIC_PLUGIN_FILE', __FILE__ );
 define( 'ACCESSIBILITY_MAGIC_URL', plugin_dir_url( __FILE__ ) );
