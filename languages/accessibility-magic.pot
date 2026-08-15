@@ -1,0 +1,433 @@
+# Copyright (C) 2026 HandyPlugins
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Accessibility Magic 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/accessibility-magic\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-15T08:49:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: accessibility-magic\n"
+
+#. Plugin Name of the plugin
+#: accessibility-magic.php
+#: includes/settings.php:95
+#: includes/settings.php:96
+#: includes/settings.php:116
+msgid "Accessibility Magic"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: accessibility-magic.php
+msgid "https://handyplugins.co/wp-accessibility-toolkit/"
+msgstr ""
+
+#. Description of the plugin
+#: accessibility-magic.php
+msgid "Accessibility Magic is a collection of tools to make your WordPress website more accessible."
+msgstr ""
+
+#. Author of the plugin
+#: accessibility-magic.php
+msgid "HandyPlugins"
+msgstr ""
+
+#. Author URI of the plugin
+#: accessibility-magic.php
+msgid "https://handyplugins.co/"
+msgstr ""
+
+#: includes/core.php:170
+msgid "Reset"
+msgstr ""
+
+#: includes/core.php:171
+msgid "Close"
+msgstr ""
+
+#: includes/core.php:172
+msgid "Accessibility Options"
+msgstr ""
+
+#: includes/core.php:173
+msgid "Increase Text Size"
+msgstr ""
+
+#: includes/core.php:174
+msgid "Decrease Text Size"
+msgstr ""
+
+#: includes/core.php:175
+msgid "Increase Text Spacing"
+msgstr ""
+
+#: includes/core.php:176
+msgid "Decrease Text Spacing"
+msgstr ""
+
+#: includes/core.php:177
+msgid "Increase Line Height"
+msgstr ""
+
+#: includes/core.php:178
+msgid "Decrease Line Height"
+msgstr ""
+
+#: includes/core.php:179
+#: includes/settings.php:233
+msgid "Invert Colors"
+msgstr ""
+
+#: includes/core.php:180
+#: includes/settings.php:261
+msgid "Gray Hues"
+msgstr ""
+
+#: includes/core.php:181
+#: includes/settings.php:288
+msgid "Underline Links"
+msgstr ""
+
+#: includes/core.php:182
+#: includes/settings.php:315
+msgid "Big Cursor"
+msgstr ""
+
+#: includes/core.php:183
+#: includes/settings.php:342
+msgid "Reading Guide"
+msgstr ""
+
+#: includes/core.php:184
+#: includes/settings.php:369
+msgid "Text to Speech"
+msgstr ""
+
+#: includes/core.php:185
+msgid "Speech to Text"
+msgstr ""
+
+#: includes/core.php:186
+msgid "Disable Animations"
+msgstr ""
+
+#: includes/core.php:228
+msgid "Screen Reader enabled. Reading Pace - Normal"
+msgstr ""
+
+#: includes/core.php:229
+msgid "Reading Pace - Fast"
+msgstr ""
+
+#: includes/core.php:230
+msgid "Reading Pace - Slow"
+msgstr ""
+
+#: includes/core.php:231
+msgid "Screen Reader - Disabled"
+msgstr ""
+
+#: includes/core.php:232
+msgid "Colors Set To Normal"
+msgstr ""
+
+#: includes/core.php:233
+msgid "Colors Inverted"
+msgstr ""
+
+#: includes/core.php:234
+msgid "Gray Hues Disabled"
+msgstr ""
+
+#: includes/core.php:235
+msgid "Gray Hues Enabled"
+msgstr ""
+
+#: includes/core.php:236
+msgid "Links UnderLined"
+msgstr ""
+
+#: includes/core.php:237
+msgid "Links UnderLine Removed"
+msgstr ""
+
+#: includes/core.php:238
+msgid "Big Cursor Enabled"
+msgstr ""
+
+#: includes/core.php:239
+msgid "Big Cursor Disabled"
+msgstr ""
+
+#: includes/core.php:240
+msgid "Reading Guide Enabled"
+msgstr ""
+
+#: includes/core.php:241
+msgid "Reading Guide Disabled"
+msgstr ""
+
+#: includes/core.php:242
+msgid "Text Size Increased"
+msgstr ""
+
+#: includes/core.php:243
+msgid "Text Size Decreased"
+msgstr ""
+
+#: includes/core.php:244
+msgid "Line Height Increased"
+msgstr ""
+
+#: includes/core.php:245
+msgid "Line Height Decreased"
+msgstr ""
+
+#: includes/core.php:246
+msgid "Text Spacing Increased"
+msgstr ""
+
+#: includes/core.php:247
+msgid "Text Spacing Decreased"
+msgstr ""
+
+#: includes/core.php:260
+#: includes/core.php:267
+#: includes/settings.php:465
+msgid "Accessibility Statement"
+msgstr ""
+
+#: includes/settings.php:64
+#: includes/settings.php:137
+msgid "Settings"
+msgstr ""
+
+#: includes/settings.php:123
+msgid "Documentation"
+msgstr ""
+
+#: includes/settings.php:142
+#: includes/settings.php:709
+msgid "Update settings"
+msgstr ""
+
+#: includes/settings.php:152
+msgid "Text Size Control"
+msgstr ""
+
+#: includes/settings.php:168
+msgid "Enable text size control. Allows to increase or decrease font size for better readability."
+msgstr ""
+
+#: includes/settings.php:179
+msgid "Text Space Control"
+msgstr ""
+
+#: includes/settings.php:195
+msgid "Enable text space control. Allows to expand or contract space between characters and words."
+msgstr ""
+
+#: includes/settings.php:206
+msgid "Line Height Control"
+msgstr ""
+
+#: includes/settings.php:222
+msgid "Enable line height control. Allows to adjust the vertical space between lines of text."
+msgstr ""
+
+#: includes/settings.php:234
+#: includes/settings.php:370
+#: includes/settings.php:398
+#: includes/settings.php:544
+msgid "Pro"
+msgstr ""
+
+#: includes/settings.php:250
+msgid "Enable invert colors. Allows to switch the document's background between black and white, while correspondingly inverting the default text color from black to white and vice versa."
+msgstr ""
+
+#: includes/settings.php:277
+msgid "Enable gray hues. Allows to toggle the website's color scheme to grayscale, encompassing all content including images."
+msgstr ""
+
+#: includes/settings.php:304
+msgid "Enable underline links. Allows to underline all links within the document."
+msgstr ""
+
+#: includes/settings.php:331
+msgid "Enable big cursor. Replace the default mouse cursor with a larger version."
+msgstr ""
+
+#: includes/settings.php:358
+msgid "Enable reading guide. Display a guide line to assist in tracking text while reading."
+msgstr ""
+
+#: includes/settings.php:386
+msgid "Enable the browser's text-to-speech function to read out text."
+msgstr ""
+
+#: includes/settings.php:397
+msgid "Animations"
+msgstr ""
+
+#: includes/settings.php:414
+msgid "Add an option to disable animations."
+msgstr ""
+
+#: includes/settings.php:425
+msgid "Hotkeys"
+msgstr ""
+
+#: includes/settings.php:441
+msgid "Use keyboard shortcuts to activate/deactivate features."
+msgstr ""
+
+#. translators: %s: list of hotkeys
+#: includes/settings.php:449
+#, php-format
+msgid "You can find a list of key mappings in the %s."
+msgstr ""
+
+#: includes/settings.php:450
+msgid "documentation"
+msgstr ""
+
+#: includes/settings.php:483
+msgid "Enter the accessibility statement URL. It opens in the iframe modal."
+msgstr ""
+
+#: includes/settings.php:499
+msgid "Open accessibility statment in iframe."
+msgstr ""
+
+#: includes/settings.php:510
+msgid "Exclusions"
+msgstr ""
+
+#: includes/settings.php:519
+msgid "Do not show the accessibility toolkit on these pages"
+msgstr ""
+
+#: includes/settings.php:530
+msgid "The accessibility toolkit will not be added to these pages. It supports partial matching. (One per line)"
+msgstr ""
+
+#: includes/settings.php:543
+msgid "Icon"
+msgstr ""
+
+#: includes/settings.php:548
+msgid "Customize the icon appearance and position."
+msgstr ""
+
+#: includes/settings.php:565
+msgid "Use circular icon."
+msgstr ""
+
+#: includes/settings.php:573
+msgid "Select icon position."
+msgstr ""
+
+#: includes/settings.php:578
+#: includes/settings.php:580
+msgid "Top left"
+msgstr ""
+
+#: includes/settings.php:584
+#: includes/settings.php:586
+msgid "Top right"
+msgstr ""
+
+#: includes/settings.php:592
+#: includes/settings.php:594
+msgid "Bottom left"
+msgstr ""
+
+#: includes/settings.php:598
+#: includes/settings.php:600
+msgid "Bottom right"
+msgstr ""
+
+#: includes/settings.php:612
+msgid "Icon Background Color:"
+msgstr ""
+
+#: includes/settings.php:621
+msgid "Icon Color:"
+msgstr ""
+
+#: includes/settings.php:630
+msgid "Dimension"
+msgstr ""
+
+#: includes/settings.php:635
+msgid "Width:"
+msgstr ""
+
+#: includes/settings.php:640
+msgid "Height:"
+msgstr ""
+
+#: includes/settings.php:645
+#: includes/settings.php:677
+msgid "Unit"
+msgstr ""
+
+#: includes/settings.php:662
+msgid "Offset"
+msgstr ""
+
+#: includes/settings.php:667
+msgid "X (Horizontal Offset):"
+msgstr ""
+
+#: includes/settings.php:672
+msgid "Y (Vertical Offset):"
+msgstr ""
+
+#: includes/settings.php:696
+msgid "Upgrade to Pro version to unlock advanced icon styling and advanced options."
+msgstr ""
+
+#: includes/settings.php:697
+msgid "Try Pro today"
+msgstr ""
+
+#. translators: %s: HandyPlugins URL
+#: includes/settings.php:725
+#, php-format
+msgid "Made with <i class=\"sui-icon-heart\"></i> by <a href=\"%s\" rel=\"noopener\" target=\"_blank\">HandyPlugins</a>"
+msgstr ""
+
+#: includes/settings.php:735
+msgid "FAQ"
+msgstr ""
+
+#: includes/settings.php:736
+msgid "Blog"
+msgstr ""
+
+#: includes/settings.php:737
+msgid "Support"
+msgstr ""
+
+#: includes/settings.php:738
+msgid "Docs"
+msgstr ""
+
+#: includes/settings.php:743
+msgid "HandyPlugins GitHub URL"
+msgstr ""
+
+#: includes/settings.php:747
+msgid "HandyPlugins Twitter URL"
+msgstr ""
+
+#: includes/settings.php:789
+msgid "Settings saved."
+msgstr ""
