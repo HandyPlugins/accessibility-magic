@@ -1,9 +1,13 @@
-const {AccessibilityToolkit} = window;
+const { AccessibilityToolkit } = window;
 
+import { Accessibility } from 'accessibility/dist/main.bundle';
+import { patchReset } from './reset';
 
-import {Accessibility} from 'accessibility/dist/main.bundle';
-
-window.addEventListener('load', function () {
+window.addEventListener(
+	'load',
+	function () {
 		const accessibility = new Accessibility(AccessibilityToolkit);
-	}, false
+		patchReset(accessibility);
+	},
+	false
 );
