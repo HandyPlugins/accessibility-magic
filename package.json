@@ -24,8 +24,8 @@
   },
   "devDependencies": {
     "@wordpress/element": "^4.0.0",
-    "@wordpress/scripts": "^31.1.0",
-    "@wordpress/server-side-render": "^4.25",
+    "@wordpress/scripts": "^37.0.0",
+    "@wordpress/server-side-render": "^7.0",
     "@wpmudev/shared-ui": "2.12.27",
     "10up-toolkit": "^6.5"
   },
